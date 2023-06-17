@@ -1,30 +1,30 @@
 {
-    "developers": [
-        {
-            "id": "1",
-            "name": "Michele Mancini",
-            "position": "Team Lead",
-            "specialty": "Full Stack",
-            "type": "Permanent",
-            "location": "Czechia",
-            "salary": "TBD",
-            "dob": "1979-03-15",
-            "contact": "+2443445654",
-            "email": "mmancini@gmail.com",
-            "photo":"https://media.licdn.com/dms/image/D5603AQEb45oZnwx7gA/profile-displayphoto-shrink_800_800/0/1678548757228?e=1692230400&v=beta&t=Bt13Jk04LlLB8FOfscktDFURRJVY1rFPn8V4grWJv5M"
-        },
-        {
-            "id": "2",
-            "name": "Jonathan Kayizzi",
-            "position": "Full Stack Software Engineer",
-            "specialty": "Full Stack",
-            "type": "Freelance",
-            "location": "Uganda",
-            "salary": "TBD",
-            "dob": "1990-01-26",
-            "contact": "+256759223526",
-            "email": "jonahkayizzi@gmail.com",
-            "photo":"https://media.licdn.com/dms/image/D4D03AQGBpSUjTSB6LA/profile-displayphoto-shrink_800_800/0/1668456834889?e=1692230400&v=beta&t=xgfHt1yydVZQ_34muVutQf9y_Fb4XLS1uf1eRizV4To"
-        }
-    ]
+  "developers": [
+    {
+      "id": "1",
+      "name": "Michele Mancini",
+      "position": "Team Lead",
+      "specialty": "Full Stack",
+      "type": "Permanent",
+      "location": "Czechia",
+      "salary": "",
+      "dob": "1979-03-15",
+      "contact": "+2443445654",
+      "email": "mmancini@gmail.com",
+      "photo": "https://media.licdn.com/dms/image/D5603AQEb45oZnwx7gA/profile-displayphoto-shrink_800_800/0/1678548757228?e=1692230400&v=beta&t=Bt13Jk04LlLB8FOfscktDFURRJVY1rFPn8V4grWJv5M"
+    },
+    {
+      "id": "2",
+      "name": "Jonathan Kayizzi",
+      "position": "Full Stack Software Engineer",
+      "specialty": "Full Stack",
+      "type": "Freelance",
+      "location": "Uganda",
+      "salary": "",
+      "dob": "1990-01-26",
+      "contact": "+256759223526",
+      "email": "jonahkayizzi@gmail.com",
+      "photo": "https://media.licdn.com/dms/image/D4D03AQGBpSUjTSB6LA/profile-displayphoto-shrink_800_800/0/1668456834889?e=1692230400&v=beta&t=xgfHt1yydVZQ_34muVutQf9y_Fb4XLS1uf1eRizV4To"
+    }
+  ]
 }

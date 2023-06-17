@@ -23,6 +23,8 @@ const DevForm = (props) => {
     });
   };
 
+  console.log(devItem);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     addDevProp(devItem);

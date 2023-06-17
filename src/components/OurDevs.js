@@ -4,12 +4,19 @@ import { TwinSpin } from 'react-cssfx-loading';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
-import { useGetDevsQuery } from '../redux/apiSlice';
+import {
+  useGetDevsQuery,
+  useAddDevMutation,
+  useUpdateDevMutation,
+  useDeleteDevMutation,
+} from '../redux/apiSlice';
 import DevForm from './DevForm';
 
 const OurDevs = () => {
-  const addDevItem = () => {
-    console.log('Add Dev Item');
+  const [updatedSalary, setUpdatedSalary] = React.useState('');
+
+  const onSalaryChange = (e) => {
+    setUpdatedSalary(e.target.value);
   };
 
   const {
@@ -19,6 +26,18 @@ const OurDevs = () => {
     isSuccess,
     isError,
   } = useGetDevsQuery();
+  const [addDev] = useAddDevMutation();
+  const [updateDev] = useUpdateDevMutation();
+  const [deleteDev] = useDeleteDevMutation();
+
+  const handleSalaryUpdate = (event, dev) => {
+    event.preventDefault();
+    updateDev({ ...dev, salary: updatedSalary });
+  };
+
+  const addDevItem = (devItem) => {
+    addDev(devItem);
+  };
 
   const age = (dob) => {
     const today = new Date();
@@ -82,11 +101,19 @@ const OurDevs = () => {
         <div className="w-1/4 flex gap-4">
           <div className="w-2/3 text-left pl-3">
             <p className="text-sm font-semibold opacity-50">Salary</p>
-            <form className="flex flex-col gap-1 text-md font-thin mt-1">
-              <input type="text" className="p-1" placeholder={dev.salary} />
+            <form
+              onSubmit={(e) => handleSalaryUpdate(e, dev)}
+              className="flex flex-col gap-1 text-md font-thin mt-1"
+            >
+              <input
+                type="text"
+                onChange={onSalaryChange}
+                className="p-1"
+                placeholder={dev.salary}
+              />
               <button
                 className="bg-cyan-500 text-xs h-8 rounded-sm text-white hover:bg-cyan-600"
-                type="button"
+                type="submit"
               >
                 UPDATE SALARY
               </button>
@@ -95,6 +122,7 @@ const OurDevs = () => {
           <button
             className="w-1/4 bg-red-600 text-white rounded-sm hover:bg-red-700"
             type="button"
+            onClick={() => deleteDev({ id: dev.id })}
           >
             <FontAwesomeIcon icon={faTrash} />
           </button>
