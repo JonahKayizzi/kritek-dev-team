@@ -1,3 +1,5 @@
+import React from 'react';
+
 const NextLink = () => (
   <div className="text-center h-screen">
     <h1 className="text-cyan-500">
