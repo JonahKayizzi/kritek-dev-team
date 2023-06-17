@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const links = [
   { to: '/', text: 'OUR DEVELOPERS' },
-  { to: '/add', text: 'ADD A DEV' },
+  { to: '/next_link', text: 'NEXT LINK' },
 ];
 
 const NavBar = () => (
