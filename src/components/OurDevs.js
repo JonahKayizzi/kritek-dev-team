@@ -100,7 +100,7 @@ const OurDevs = () => {
         </div>
         <div className="w-1/4 flex gap-4">
           <div className="w-2/3 text-left pl-3">
-            <p className="text-sm font-semibold opacity-50">Salary</p>
+            <p className="text-sm font-semibold opacity-50">{`Salary: $ ${dev.salary}`}</p>
             <form
               onSubmit={(e) => handleSalaryUpdate(e, dev)}
               className="flex flex-col gap-1 text-md font-thin mt-1"
@@ -109,7 +109,7 @@ const OurDevs = () => {
                 type="text"
                 onChange={onSalaryChange}
                 className="p-1"
-                placeholder={dev.salary}
+                placeholder="New Salary..."
               />
               <button
                 className="bg-cyan-500 text-xs h-8 rounded-sm text-white hover:bg-cyan-600"
