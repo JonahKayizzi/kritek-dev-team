@@ -1,5 +1,6 @@
-import exp from 'constants';
 import React from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import PropTypes from 'prop-types';
 
 const DevForm = (props) => {
   const { addDevProp } = props;
@@ -36,9 +37,15 @@ const DevForm = (props) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <p>Add New Dev</p>
+    <form
+      onSubmit={handleSubmit}
+      className="border-b mb-2 pb-8 flex flex-row flex-wrap gap-6"
+    >
+      <p className="text-gray-400 text-xl font-semibold tracking-wide text-left w-full">
+        ADD NEW DEV
+      </p>
       <input
+        className="w-1/4 border border-gray-300 rounded-sm py-3 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
         type="text"
         placeholder="Developer Name ..."
         value={devItem.devName}
@@ -46,6 +53,7 @@ const DevForm = (props) => {
         name="devName"
       />
       <input
+        className="w-1/3 border border-gray-300 rounded-sm py-3 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
         type="text"
         placeholder="Speciality e.g Full Stack, Frontend ..."
         value={devItem.devSpecialty}
@@ -53,6 +61,7 @@ const DevForm = (props) => {
         name="devSpecialty"
       />
       <input
+        className="w-1/4 border border-gray-300 rounded-sm py-3 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
         type="text"
         placeholder="Employment Type e.g Freelance, Full Time ..."
         value={devItem.devEmploymentType}
@@ -60,6 +69,7 @@ const DevForm = (props) => {
         name="devEmploymentType"
       />
       <input
+        className="w-1/3 border border-gray-300 rounded-sm py-3 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
         type="text"
         placeholder="Location"
         value={devItem.devLocation}
@@ -67,6 +77,7 @@ const DevForm = (props) => {
         name="devLocation"
       />
       <input
+        className="w-1/4 border border-gray-300 rounded-sm py-3 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
         type="text"
         placeholder="Salary"
         value={devItem.devSalary}
@@ -74,12 +85,19 @@ const DevForm = (props) => {
         name="devSalary"
       />
       <input
+        className="w-1/4 border border-gray-300 rounded-sm py-3 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
         type="text"
         placeholder="Date of Birth"
         value={devItem.devDateOfBirth}
         onChange={handleChange}
         name="devDateOfBirth"
       />
+      <button
+        className="w-5/6 font-semibold bg-cyan-500 text-white rounded-sm py-2"
+        type="submit"
+      >
+        ADD DEVELOPER
+      </button>
     </form>
   );
 };
@@ -87,5 +105,5 @@ const DevForm = (props) => {
 export default DevForm;
 
 DevForm.propTypes = {
-  addDevProp: exp.func.isRequired,
+  addDevProp: PropTypes.func.isRequired,
 };
