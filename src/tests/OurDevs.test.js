@@ -11,7 +11,7 @@ describe('OurDevs tests', () => {
         <Router>
           <OurDevs />
         </Router>
-      </ApiProvider>
+      </ApiProvider>,
     );
     expect(tree).toMatchSnapshot();
   });
