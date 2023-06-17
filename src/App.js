@@ -9,7 +9,7 @@ function App() {
     <div className="text-center">
       <NavBar />
       <Routes>
-        <Route path="/" element={<OurDevs />} />
+        <Route exact path="/" element={<OurDevs />} />
         <Route path="/next_link" element={<NextLink />} />
       </Routes>
     </div>

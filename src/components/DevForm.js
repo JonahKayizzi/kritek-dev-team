@@ -39,7 +39,7 @@ const DevForm = (props) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="border-b mb-2 pb-8 flex flex-row flex-wrap gap-6"
+      className="border-b mb-2 pb-8 flex flex-row flex-wrap gap-5"
     >
       <p className="text-gray-400 text-xl font-semibold tracking-wide text-left w-full">
         ADD NEW DEV
@@ -69,7 +69,7 @@ const DevForm = (props) => {
         name="devEmploymentType"
       />
       <input
-        className="w-1/3 border border-gray-300 rounded-sm py-3 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+        className="w-1/4 border border-gray-300 rounded-sm py-3 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
         type="text"
         placeholder="Location"
         value={devItem.devLocation}
@@ -93,7 +93,7 @@ const DevForm = (props) => {
         name="devDateOfBirth"
       />
       <button
-        className="w-5/6 font-semibold bg-cyan-500 text-white rounded-sm py-2"
+        className="font-semibold bg-cyan-500 text-white rounded-sm py-2 px-3"
         type="submit"
       >
         ADD DEVELOPER
