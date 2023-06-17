@@ -48,5 +48,6 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
+      - run: npm install
       - name: Run unit and integration tests
         run: npm test

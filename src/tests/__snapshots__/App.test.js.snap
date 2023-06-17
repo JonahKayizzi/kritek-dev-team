@@ -17,11 +17,13 @@ Object {
             src="logo.svg"
           />
           <p>
-            Edit 
+            Edit
+             
             <code>
               src/App.js
             </code>
-             and save to reload.
+             
+            and save to reload.
           </p>
           <a
             class="App-link"
@@ -48,11 +50,13 @@ Object {
           src="logo.svg"
         />
         <p>
-          Edit 
+          Edit
+           
           <code>
             src/App.js
           </code>
-           and save to reload.
+           
+          and save to reload.
         </p>
         <a
           class="App-link"
