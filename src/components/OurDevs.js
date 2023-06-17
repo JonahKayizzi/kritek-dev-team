@@ -21,10 +21,10 @@ const OurDevs = () => {
 
   const {
     data: devs,
-    error,
     isLoading,
     isSuccess,
     isError,
+    error,
   } = useGetDevsQuery();
   const [addDev] = useAddDevMutation();
   const [updateDev] = useUpdateDevMutation();
@@ -130,7 +130,7 @@ const OurDevs = () => {
       </li>
     ));
   } else if (isError) {
-    content = <li>{error}</li>;
+    content = <li>{error.error}</li>;
   }
 
   return (
