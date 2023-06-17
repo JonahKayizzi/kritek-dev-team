@@ -29,3 +29,27 @@ code {
     'Courier New',
     monospace;
 }
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+p {
+  margin: 0;
+}
+
+.active {
+  color: black;
+}
+
+#root {
+  background-color: #f5f6fa;
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+}
