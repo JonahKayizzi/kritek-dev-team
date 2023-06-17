@@ -39,7 +39,7 @@ const DevForm = (props) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="border-b mb-2 pb-8 flex flex-row flex-wrap gap-5"
+      className="border-b mb-1 pb-5 flex flex-row flex-wrap gap-5"
     >
       <p className="text-gray-400 text-xl font-semibold tracking-wide text-left w-full">
         ADD NEW DEV
@@ -93,7 +93,7 @@ const DevForm = (props) => {
         name="devDateOfBirth"
       />
       <button
-        className="font-semibold bg-cyan-500 text-white rounded-sm py-2 px-3"
+        className="font-semibold bg-cyan-500 text-white rounded-sm py-2 px-3 hover:bg-cyan-600 focus:outline-none focus:shadow-outline"
         type="submit"
       >
         ADD DEVELOPER
