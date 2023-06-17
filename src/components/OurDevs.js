@@ -1,4 +1,6 @@
 import React from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { TwinSpin } from 'react-cssfx-loading';
 import { useGetDevsQuery } from '../redux/apiSlice';
 import DevForm from './DevForm';
 
@@ -17,7 +19,11 @@ const OurDevs = () => {
 
   let content;
   if (isLoading) {
-    content = <div>Loading...</div>;
+    content = (
+      <div className="flex flex-col items-center">
+        <TwinSpin />
+      </div>
+    );
   } else if (isSuccess) {
     console.log(devs);
   } else if (isError) {
