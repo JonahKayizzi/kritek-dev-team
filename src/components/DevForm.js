@@ -8,15 +8,16 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 const DevForm = (props) => {
   const { addDevProp } = props;
   const [devItem, setDevItem] = React.useState({
-    devName: '',
-    devLanguage: '',
-    devYearsOfExperience: '',
-    devSpecialty: '',
-    devEmploymentType: '',
-    devTitle: '',
-    devLocation: '',
-    devSalary: '',
-    devDateOfBirth: '',
+    name: '',
+    position: '',
+    specialty: '',
+    type: '',
+    location: '',
+    salary: '',
+    dob: '',
+    contact: '',
+    email: '',
+    photo: '',
   });
 
   const handleChange = (e) => {

@@ -124,6 +124,7 @@ const OurDevs = () => {
             type="button"
             onClick={() => deleteDev({ id: dev.id })}
           >
+            {dev.id}
             <FontAwesomeIcon icon={faTrash} />
           </button>
         </div>

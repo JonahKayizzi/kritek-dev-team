@@ -15,7 +15,7 @@ const NavBar = () => (
           <NavLink
             className="no-underline text-gray-300 hover:text-gray-700"
             to={link.to}
-            activeClassName="active"
+            activeclassname="active"
           >
             {link.text}
           </NavLink>
